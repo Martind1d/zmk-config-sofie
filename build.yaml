@@ -19,12 +19,14 @@
 #
 ---
 include:
-  - board: nice_nano_v2  # (Or your board name)
-    shield: sofle_left   # (Or your shield name)
+  - board: nice_nano_v2  # (Your board name)
+    shield: sofle_left   # (Your shield name)
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_USB_HID=y
+    # We are removing the -DCONFIG_ZMK_USB_HID=y flag
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
 
-  - board: nice_nano_v2  # (Or your board name)
-    shield: sofle_right  # (Or your shield name)
+  - board: nice_nano_v2  # (Your board name)
+    shield: sofle_right  # (Your shield name)
     snippet: studio-rpc-usb-uart
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_USB_HID=y
+    # We are removing the -DCONFIG_ZMK_USB_HID=y flag
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
