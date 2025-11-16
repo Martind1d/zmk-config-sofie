@@ -25,25 +25,7 @@
             then-layer = <ADJUST>;
         };
     };
-    behaviors {
-        // Behavior for A / F1
-        a_or_f1: a_or_f1 {
-            compatible = "zmk,behavior-mod-morph";
-            label = "A_OR_F1";
-            #binding-cells = <0>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-            bindings = <&kp A>, <&kp F1>;
-        };
-
-        // Behavior for Backslash / "å"
-        bslh_or_a_ring: bslh_or_a_ring {
-            compatible = "zmk,behavior-mod-morph";
-            label = "BSLH_OR_A_RING"; 
-            #binding-cells = <0>;
-            mods = <(MOD_LALT | MOD_RALT)>;
-            bindings = <&kp BSLH>, <&kp LBRC>;
-        };
-    };
+   
     keymap {
         compatible = "zmk,keymap";
 
