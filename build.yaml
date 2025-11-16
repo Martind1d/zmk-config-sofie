@@ -21,14 +21,10 @@
 include:
   - board: nice_nano_v2  # (Or your board name)
     shield: sofle_left   # (Or your shield name)
-    snippet:
-      - studio-rpc-usb-uart
-      - oled # <-- THIS TURNS ON YOUR SCREENS
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_USB_HID=y # <-- THIS TURNS ON USB TYPING
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_USB_HID=y
 
   - board: nice_nano_v2  # (Or your board name)
     shield: sofle_right  # (Or your shield name)
-    snippet:
-      - studio-rpc-usb-uart
-      - oled # <-- THIS TURNS ON YOUR SCREENS
-    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_USB_HID=y # <-- THIS TURNS ON USB TYPING
+    snippet: studio-rpc-usb-uart
+    cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n -DCONFIG_ZMK_USB_HID=y
